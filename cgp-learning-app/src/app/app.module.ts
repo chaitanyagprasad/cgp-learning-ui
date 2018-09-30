@@ -2,13 +2,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { CgpLearningRoutingModule } from './app.routes';
+import { LoginModule } from './login-page/login-page.module';
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
+    
+    
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CgpLearningRoutingModule,    
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
